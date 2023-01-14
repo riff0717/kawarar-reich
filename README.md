@@ -43,7 +43,7 @@ Docker Compose version v2.3.3
 
 # 初回設定
 初回はnode_modulesがないのでdocker-composeが失敗するため、git cloneした後の初回構築時のみ下記コマンドを実行する
-`docker-compose run -w /usr/src/app/site --rm node yarn install
+`docker-compose run -w /home/app --rm app yarn install
 
 > see https://zenn.dev/ttani/articles/docker-clone-first-operation
 
