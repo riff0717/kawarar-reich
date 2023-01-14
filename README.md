@@ -15,9 +15,9 @@ access : http://localhost:3000/
 Dockerファイルを作成するまでにやったこと
 ```
 docker pull node
-docker run --rm -it -v $PWD:/home/app -w /home/app node yarn create next-app --example blog-starter kawarar-reich
+docker run --rm -it -v ${PWD}:/home/app -w /home/app node yarn create next-app --example blog-starter kawarar-reich
 cd kawarar-reich
-docker run --rm -it -v $PWD:/home/app -w /home/app -p 3000:3000 node yarn dev
+docker run --rm -it -v ${PWD}:/home/app -w /home/app -p 3000:3000 node yarn dev
 ```
 
 # 参考サイト
